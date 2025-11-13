@@ -69,19 +69,6 @@ A **Linear Regression** model was developed to predict the **Selling Price**.
 
 ---
 
-## 📂 **Project Structure**
-
-```
-Flipkart-Mobile-Sales-Analysis/
-│
-├── Flipkart_Mobiles.csv
-├── flipkart_analysis.ipynb
-├── README.md
-└── images/                   # Visualizations (optional)
-```
-
----
-
 ## 🧰 **Technologies Used**
 
 * Python
