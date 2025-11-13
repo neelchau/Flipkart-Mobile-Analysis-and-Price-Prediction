@@ -1,37 +1,93 @@
-Flipkart Mobile Sales Analysis
-Project Overview
-This project aims to analyze mobile phone sales data from Flipkart to understand various trends, distributions, and relationships between different attributes of mobile phones. Additionally, a Linear Regression model is built to predict the selling price of mobile phones based on their features.
+# 📱 Flipkart Mobile Sales Analysis & Price Prediction
 
-Dataset
-The analysis uses the Flipkart_Mobiles.csv dataset, which contains information about mobile phones, including Brand, Model, Color, Memory, Storage, Rating, Selling Price, and Original Price.
+## 📝 **Project Overview**
 
-Exploratory Data Analysis (EDA)
-The following key aspects were explored through visualizations:
+This project focuses on analyzing mobile phone sales data from **Flipkart** to uncover important trends, patterns, and insights related to mobile brands, pricing, ratings, and customer preferences.
+Additionally, a **Linear Regression model** is built to predict the **Selling Price** of mobile phones based on various features.
 
-Scatter Plot for Original Vs Selling Price: Visualizing the relationship between the original and selling prices of mobile phones.
-Distribution of Ratings: A histogram showing the frequency distribution of mobile phone ratings.
-Box Plot for Distribution of Ratings By Brand: Understanding the rating distribution across different brands.
-Violin Plot for Distribution of Ratings By Brand: A more detailed view of the rating distribution and density for each brand.
-Distribution of Rating for Samsung Brand: A specific histogram to analyze the ratings of the most selling brand (Samsung).
-Pie Chart for Most Selling Phones: Visualizing the market share of top brands and others.
-Bar Graph for Number of Models By Brands: Counting the unique number of models offered by each brand.
-Top 10 Models: Identifying the most frequently appearing models in the dataset.
-Bar Graph for Most Selling Color: Showing the distribution of the top 5 most common phone colors.
-Count of Selling of Phones By Brands: A bar plot displaying the total number of phones sold by each brand.
-Average Selling Price By Brand: Highlighting the average selling price for each brand.
-Number of Phones Available in different Price Ranges: Categorizing phones into 'Low Range', 'Mid Range', and 'Premium Range' and showing their counts.
-Most Costly Selling Models: Identifying the most expensive model for the top 10 brands.
-Selling Price and Rating for Phones: A scatter plot to observe the relationship between ratings and selling prices, categorized by brand.
-Predictive Modeling
-A Linear Regression model was implemented to predict the Selling Price of mobile phones.
+---
 
-Data Preprocessing:
-Missing values in the 'Rating' column were imputed.
-Categorical features (Brand, Model, Color, Memory, Storage, Price Range) were encoded using LabelEncoder.
-Numerical features (Original Price, Selling Price) were scaled using StandardScaler.
-Rows with any remaining NaN values were dropped before training.
-Model Training and Evaluation:
-The data was split into training and testing sets (80% train, 20% test).
-A LinearRegression model was trained on the preprocessed data.
-The model achieved an R2 Score of 97.16%.
-A scatter plot comparing actual vs. predicted selling prices demonstrates the model's performance.
+## 📂 **Dataset**
+
+The project uses the **https://www.kaggle.com/datasets/devsubhash/flipkart-mobiles-dataset** dataset, containing attributes such as:
+
+* **Brand**
+* **Model**
+* **Color**
+* **Memory**
+* **Storage**
+* **Rating**
+* **Original Price**
+* **Selling Price**
+
+---
+
+## 🔍 **Exploratory Data Analysis (EDA)**
+
+Various visualizations and statistical summaries were used to understand the dataset:
+
+### 📊 **Key Insights Visualized**
+
+* **Original vs. Selling Price (Scatter Plot)** — Relationship between base price and discounted price.
+* **Distribution of Ratings** — Frequency of ratings across all phones.
+* **Rating Distribution by Brand (Box Plot & Violin Plot)** — Comparison of quality perception across brands.
+* **Samsung Rating Distribution** — Deep dive into Samsung, the most frequently sold brand.
+* **Most Selling Brands (Pie Chart)** — Market share of popular brands.
+* **Number of Models per Brand (Bar Graph)** — Variety offered by each brand.
+* **Top 10 Most Frequent Models** — Models appearing most in the dataset.
+* **Most Selling Colors** — Popular color variants among customers.
+* **Phone Sales Count by Brand** — Comparing sales volume.
+* **Average Selling Price by Brand** — Brand-wise pricing comparison.
+* **Phones in Different Price Ranges** — Categorized as *Low*, *Mid*, and *Premium*.
+* **Most Expensive Models per Brand** — Highest-priced models for top brands.
+* **Selling Price vs Rating (Scatter Plot)** — Relationship between price and customer satisfaction.
+
+---
+
+## 🤖 **Predictive Modeling**
+
+A **Linear Regression** model was developed to predict the **Selling Price**.
+
+### 🛠 **Data Preprocessing**
+
+* Missing ratings imputed.
+* Categorical features encoded using **LabelEncoder**:
+
+  * Brand, Model, Color, Memory, Storage, Price Range
+* Numerical features scaled using **StandardScaler**.
+* Rows containing remaining NaN values were removed.
+
+### 🧪 **Model Training**
+
+* Dataset split: **80% Train / 20% Test**
+* Trained using **LinearRegression** from scikit-learn.
+
+### 📈 **Model Performance**
+
+* **R² Score:** **97.16%**
+* Scatter plot of *Actual vs Predicted* prices confirms high model accuracy and consistency.
+
+---
+
+## 📂 **Project Structure**
+
+```
+Flipkart-Mobile-Sales-Analysis/
+│
+├── Flipkart_Mobiles.csv
+├── flipkart_analysis.ipynb
+├── README.md
+└── images/                   # Visualizations (optional)
+```
+
+---
+
+## 🧰 **Technologies Used**
+
+* Python
+* pandas, numpy
+* matplotlib, seaborn
+* scikit-learn
+* Jupyter Notebook
+
+---
